@@ -1,7 +1,4 @@
 .container{
-  padding-left: 20px;
-  padding-top: 10px;
-  margin: 10px 10px 10px 10px;
   position:absolute;
   top: 0;
   bottom: 0;
@@ -10,7 +7,6 @@
   background-image: url("https://www.ghpage.com/wp-content/uploads/2018/03/Ghana-culture-at-Ebonys-one-week-9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #overlay{
@@ -22,12 +18,17 @@
   overflow: auto;
   width: 100%;
   height: 100%;
-  background-color:  rgba(0, 0, 0, 0.18);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+
 }
+
 
 h1{
   text-align: center;
   font-size: 60px;
+  text-shadow: 2px 2px #79706A;
 }
 
 body{
