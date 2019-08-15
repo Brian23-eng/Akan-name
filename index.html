@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>name generator</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="container">
-    <div class="outlay">
+    <div id="outlay">
       <h1>Name Generator</h1>
       <form class="form" action="index.html" method="post">
-        Year of Birth<br><input type="number" name="year" placeholder="eg. 1994" min="1979" max="2018"><br>
+        Century<br><input type="text" name="century" placeholder="eg. 21">
+                          <br><br>
+        Year<br><input type="text" name="year" placeholder="eg.1994"><br>
                         <br>
-        Month of Birth<br><input type="number" name="month" placeholder="eg.5" min="1" max="12"><br>
+        Month <br><input type="text" name="month" placeholder="eg.5"><br>
                         <br>
-        Day of Birth<br><input type="number" name="year" placeholder="eg.19" min="1" max="31"><br>
+        Day<br><input type="text" name="day" placeholder="eg.19"><br>
                         <br>
         <input type="radio" name="gender">Male
                     <br>
