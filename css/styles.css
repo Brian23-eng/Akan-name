@@ -31,6 +31,26 @@ h1{
   text-shadow: 2px 2px #79706A;
 }
 
+h2{
+  text-align: center;
+}
+
 body{
   color: white;
+}
+
+#box{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#enter{
+  text-align: center;
+}
+
+.you{
+  border: 2px ridge black;
+  padding-bottom: 15px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px #566573;
 }
