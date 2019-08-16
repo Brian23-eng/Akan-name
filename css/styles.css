@@ -41,8 +41,8 @@ body{
 }
 
 .f1{
-  border: 1px solid black;
-  box-shadow: 0 0 0.5 #DC7633;
+  border: 2px solid black;
+  box-shadow:2px 2px #79706A;
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
 }
