@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>name generator</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Name generator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
     <div id="overlay">
-
+    
       <h1> Akan Name Generator</h1>
-       <div class="intro">
-        <p>The project is a web based application that takes a users birthday and calculates the year and the
-        month they were born depending on their gender and gives them their Akan name. Fun right?
-        Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
-        first name as a 'day name' which corresponds to the day in the week they were born for instance 'Kwaku'
-        is a male name born on wednesday and 'Abenaa' is a female name born in a tuesday.</p>
-
-        <p><strong>Fun fact:</strong>Did you know, former United Nations Secretary-General and recepient of Nobel
-          peace prize Kofi Annan was born on a Friday. Kofi is an Akan name for a male born on Friday.
-          Thats fun,right?? You too can find your birth day and corresponding Akan name.Input your gender and date
-          of birth and enjoy the fun!!.</p></div>
+        <div class="intro">
+          <p>The project is a web based application that takes a users birthday and calculates the year and the
+            month they were born depending on their gender and gives them their Akan name. Fun right?
+            Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
+            first name as a 'day name' which corresponds to the day in the week they were born for instance 'Kwaku'
+            is a male name born on wednesday and 'Abenaa' is a female name born in a tuesday.</p>
+    
+          <p><strong>Fun fact:</strong>Did you know, former United Nations Secretary-General and recepient of Nobel
+              peace prize Kofi Annan was born on a Friday. Kofi is an Akan name for a male born on Friday.
+              Thats fun,right?? You too can find your birth day and corresponding Akan name.Input your gender and date
+              of birth and enjoy the fun!!.</p></div>
           <h2>Fill the following form</h2>
-          <div class="f1">
-          <form class="" action="index.html" method="post">
-            <h3>Age</h3>
-              <div id="you">
-                  <label for="century">Century:</label>
-                    <input type="number" name="century" id="century" placeholder="eg.19">
-                  <label for="year">Year:</label>
-                    <input type="number" name="year" id="year" placeholder="YY">
-                  <label for="month">Month:</label>
-                    <input type="number" name="month" id="month" placeholder="MM">
-                  <label for="day">Day:</label>
-                    <input type="number" name="day" id="day" placeholder="DD">
-              </div>
-                  <br><br>
-               <h3>Gender</h3>
-              <div id="radio">
-                  <label for="male">Male</label>
-                    <input type="radio" name="gender" id="gender">
+            <div class="f1">
+             <form class="" action="index.html" method="get">
+               <h3>Age</h3>
+                  <div id="you">
+                      <label for="century">Century:</label>
+                        <input type="number" name="century" id="century" placeholder="eg.19">
+                      <label for="year">Year:</label>
+                        <input type="number" name="year" id="years" placeholder="YY" required>
+                      <label for="month">Month:</label>
+                        <input type="number" name="month" id="months" placeholder="MM" required>
+                      <label for="day">Day:</label>
+                        <input type="number" name="day" id="days" placeholder="DD" required>
+                  </div>
+                      <br><br>
+                   <h3>Gender</h3>
+                    <div id="radio">
+                      <label for="male">Male</label>
+                        <input type="radio" name="gender" id="gender">
+                            <br><br>
+                      <label for="female">Female</label>
+                        <input type="radio" name="gender" id="gender">
+                    </div>
                         <br><br>
-                  <label for="female">Female</label>
-                    <input type="radio" name="gender" id="gender">
+                <input type="submit" name="Submit" value="Submit" onclick="akanName">
+                        <br><br>
+                <button type="reset" name="reset">Reset</button>
               </div>
-                    <br><br>
-            <button type="submit" name="submit" onclick="sub()">submit</button>
-                    <br><br>
-            <button type="reset" name="reset">Reset</button>
-          </div>
-          </form>
-
-      <p id="right">All rights reserved Copyright (c) 2019 Brian</p>
-    </div>
-  </div>
-  </body>
-  <script type="text/javascript" src="script.js">
-
-  </script>
+              </form>
+    
+          <p id="right">All rights reserved Copyright (c) 2019 Brian</p>
+        </div>
+      </div>
+      </body>
+      <script type="text/javascript" src="script.js">
+    
+      </script>
+  
+</body>
 </html>
