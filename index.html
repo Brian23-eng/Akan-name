@@ -20,27 +20,33 @@
           peace prize Kofi Annan was born on a Friday. Kofi is an Akan name for a male born on Friday.
           Thats fun,right?? You too can find your birth day and corresponding Akan name.Input your gender and date
           of birth and enjoy the fun!!.</p></div>
-
+          <h2>Fill the following form</h2>
           <div class="f1">
           <form class="" action="index.html" method="post">
-            <h2>Enter your Age</h2>
-            <label for="century">Century</label>
-              <input type="number" name="century" id="century">
-            <label for="year">Year</label>
-              <input type="number" name="year" id="year">
-            <label for="month">Month</label>
-              <input type="number" name="month" id="month">
-            <label for="day">Day</label>
-              <input type="number" name="day" id="day">
+            <h3>Age</h3>
+              <div id="you">
+                  <label for="century">Century</label>
+                    <input type="number" name="century" id="century" placeholder="eg.19">
+                  <label for="year">Year</label>
+                    <input type="number" name="year" id="year" placeholder="YY">
+                  <label for="month">Month</label>
+                    <input type="number" name="month" id="month" placeholder="MM" >
+                  <label for="day">Day</label>
+                    <input type="number" name="day" id="day" placeholder="DD">
+              </div>
                   <br><br>
-            <h2>Enter your Gender</h2>
-            <div id="radio">
-            <label for="male">Male</label>
-              <input type="radio" name="gender" id="gender">
-                        <br>
-            <label for="female">Female</label>
-              <input type="radio" name="gender" id="gender">
-            </div>
+               <h3>Gender</h3>
+              <div id="radio">
+                  <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender">
+                        <br><br>
+                  <label for="female">Female</label>
+                    <input type="radio" name="gender" id="gender">
+              </div>
+                    <br><br>
+            <button type="submit" name="submit">submit</button>
+                    <br><br>
+            <button type="reset" name="reset">Reset</button>
           </div>
           </form>
 
