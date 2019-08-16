@@ -34,10 +34,15 @@ h1{
 h2{
   color: white !important;
   text-align: center;
+  font-size: 25px;
 }
 
 body{
   color: white;
+}
+
+h3{
+  font-size: 20px;
 }
 
 .f1{
