@@ -15,21 +15,25 @@ function akanNames(){
     if  (year > maxYear || year < 1919 ){
       alert("Invalid year");
       document.getElementById("year").value = document.getElementById("year").value.replace(characters, "");
-    }else if( day.value > 31 ){
+      evt.preventDefault()
+    }else if( day.value > 31 || day.value <=0 || day.value === "" ){
       alert("Invalid date!");
+      evt.preventDefault()
       return false
   
-    }else if(month.value > 12){
+    }else if(month.value > 12 || month.value ==="" || month.value<= 0){
       alert("Invalid month!");
+      evt.preventDefault()
       return false
   
     }else {
       if(gender===""){
         alert("choose gender!");
+        evt.preventDefault()
         return false
       };
-    }
-  } 
+    } alert("Guess what?????")
+  }  
   
   
   function calc(){
@@ -45,50 +49,50 @@ function akanNames(){
   
     if (gender === 1){
       if (d === 0){
-        alert("Your Akan name is Kwasi");
+        alert(" You were born on Sunday and your Akan name is Kwasi");
       }
       else if (d === 1){
-        alert("Your Akan name is Kwadwo");
+        alert(" You were born on Monday and your Akan name is Kwadwo");
       }
       else if (d === 2){
-        alert("Your Akan name is Kwabena");
+        alert("You were born on Tuesday and your Akan name is Kwabena");
       }
       else if (d === 3){
-        alert("Your Akan name is Kwaku");
+        alert("You were born on Wednesday and your Akan name is Kwaku");
       }
       else if (d === 4){
-        alert("Your Akan name is Yaw");
+        alert("You were born on Thursday and your Akan name is Yaw");
       }
       else if (d === 5){
-        alert("Your Akan name is Kofi");
+        alert("You were born on Friday and your Akan name is Kofi");
       }
       else {
-        alert("Your Akan name is Kwame");
+        alert("You were born on Saturday and your Akan name is Kwame");
       }
     }
     if (gender === 2){
       if (d === 0){
-        alert("Your Akan name is Akosua");
+        alert("You were born on Sunday and your Akan name is Akosua");
       }
       else if (d === 1){
-        alert("Your Akan name is Adwoa");
+        alert("You were born on Monday and your Akan name is Adwoa");
       }
       else if (d === 2){
-        alert("Your Akan name is Abenaa");
+        alert("You were born on Tuesday and your Akan name is Abenaa");
       }
       else if (d === 3){
-        alert("Your Akan name is Aku");
+        alert("You were born on Wednesday and your Akan name is Aku");
       }
       else if (d === 4){
-        alert("Your Akan name is Yaa");
+        alert("You were born on Thursday and your Akan name is Yaa");
       }
       else if (d === 5){
-        alert("Your Akan name is Afua");
+        alert("You were born on Friday and your Akan name is Afua");
       }
       else {
-        alert("Your Akan name is Ama");
+        alert("You were born on Saturday and your Akan name is Ama");
       }
-    } 
+    } alert("Fun!!!! right????")
   }
   
   

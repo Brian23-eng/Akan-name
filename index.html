@@ -12,6 +12,7 @@
     <div id="overlay">
     
       <h1> Akan Name Generator</h1>
+      <div class="akan">
         <div class="intro">
           <p>The project is a web based application that takes a users birthday and calculates the year and the
             month they were born depending on their gender and gives them their Akan name. Fun right?
@@ -22,8 +23,41 @@
           <p><strong>Fun fact:</strong>Did you know, former United Nations Secretary-General and recepient of Nobel
               peace prize Kofi Annan was born on a Friday. Kofi is an Akan name for a male born on Friday.
               Thats fun,right?? You too can find your birth day and corresponding Akan name.Input your gender and date
-              of birth and enjoy the fun!!.</p></div>
-          <h2>Fill the following form</h2>
+              of birth and enjoy the fun!!.</p>
+           
+              <p>Below are the names according to the day of the week:</p>
+                <div id= "list">
+                  <div>
+                <h3>Male</h3>
+                  <ul>
+                    <li><strong>Sunday</strong>: Kwasi</li>
+                    <li><strong>Monday</strong>: Kwadwo</li>
+                    <li><strong>Tuesday</strong>: Kwabena</li>
+                    <li><strong>Wednesday</strong>: Kwaku</li>
+                    <li><strong>Thursday</strong>: Yaw</li>
+                    <li><strong>Friday</strong>: Kofi</li>
+                    <li><strong>Saturday</strong>: Kwame</li>
+
+                  </ul></div>
+
+                  <div>
+                  <h3>Female</h3>
+                  <ul>
+                    <li><strong>Sunday</strong>: Akosua</li>
+                    <li><strong>Monday</strong>: Adwoa</li>
+                    <li><strong>Tuesday</strong>: Abenaa</li>
+                    <li><strong>Wednesday</strong>: Akua</li>
+                    <li><strong>Thursday</strong>: Yaa</li>
+                    <li><strong>Friday</strong>: Afua</li>
+                    <li><strong>Saturday</strong>: Ama</li>
+
+                  </ul></div>
+                </div>
+            </div>
+
+
+              <div>
+          <h2>Fill in the following form</h2>
             <div class="f1">
              <form name="akanName"  method="post">
                <h3>Age</h3>
@@ -31,9 +65,9 @@
                       <label for="century">Century:</label>
                         <input type="number" name="century" id="century" placeholder="eg.19">
                       <label for="year">Year:</label>
-                        <input type="number" name="year" id="year" placeholder="YY" required>
+                        <input type="number" name="year" id="year" placeholder="YY" required >
                       <label for="month">Month:</label>
-                        <input type="number" name="month" id="month" placeholder="MM" required>
+                        <input type="number" name="month" id="month" placeholder="MM" required >
                       <label for="day">Day:</label>
                         <input type="number" name="day" id="day" placeholder="DD" required>
                   </div>
@@ -41,17 +75,19 @@
                    <h3>Gender</h3>
                     <div id="radio">
                       <label for="male">Male</label>
-                        <input type="radio" name="gender" id="gender" value="1">
+                        <input type="radio" name="gender" id="gender" value="1" required>
                             <br><br>
                       <label for="female">Female</label>
-                        <input type="radio" name="gender" id="gender" value="2">
+                        <input type="radio" name="gender" id="gender" value="2" required>
                     </div>
                         <br><br>
                 <button type="submit" id="submit" onclick="akanNames();calc()">Submit</button>
                         <br><br>
                 <button type="reset" name="reset">Reset</button>
               </div>
+              </div>
               </form>
+            </div>
             <footer id="right">
              <p>All rights reserved Copyright (c) 2019 Brian</p>
            </footer>
