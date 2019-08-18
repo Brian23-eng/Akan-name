@@ -31,23 +31,23 @@
                       <label for="century">Century:</label>
                         <input type="number" name="century" id="century" placeholder="eg.19">
                       <label for="year">Year:</label>
-                        <input type="number" name="year" id="years" placeholder="YY" required>
+                        <input type="number" name="year" id="year" placeholder="YY" required>
                       <label for="month">Month:</label>
-                        <input type="number" name="month" id="months" placeholder="MM" required>
+                        <input type="number" name="month" id="month" placeholder="MM" required>
                       <label for="day">Day:</label>
-                        <input type="number" name="day" id="days" placeholder="DD" required>
+                        <input type="number" name="day" id="day" placeholder="DD" required>
                   </div>
                       <br><br>
                    <h3>Gender</h3>
                     <div id="radio">
                       <label for="male">Male</label>
-                        <input type="radio" name="gender" id="gender">
+                        <input type="radio" name="gender" id="gender" value="1">
                             <br><br>
                       <label for="female">Female</label>
-                        <input type="radio" name="gender" id="gender">
+                        <input type="radio" name="gender" id="gender" value="2">
                     </div>
                         <br><br>
-                <button type="submit" id="submit" onclick="akanNames()">Submit</button>
+                <button type="submit" id="submit" onclick="akanNames();calc()">Submit</button>
                         <br><br>
                 <button type="reset" name="reset">Reset</button>
               </div>
