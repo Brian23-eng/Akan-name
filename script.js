@@ -1,30 +1,31 @@
 //validating day, year and month
 
 
-function akanNames(){
-    var date = document.getElementById("days");
-    var year = document.getElementById("years");
-    var month = document.getElementById("months");
-  
-    if(date.value <=0 || date.value>31){
-      alert("invalid date!");
-      return false;
-  
-    }else if(month.value <=0 || month.value >12){
-      alert("invalid month!");
-       return false;
-  
-    }else{
-      if(year.value>2019){
-      alert("Incorrect year!");
-      return false;
-      }
-      //validating gender
+// validating year, month, date and gender
 
-      var male = document.getElementById("males");
-      var female = document.getElementById("females");
-    }if (male.checked== false && female.checked== false){
-        alert("Choose gender!");
-        return false;
+function akanNames(){
+    
+    var currentYear = new Date();
+    var maxYear = currentYear.getFullYear();
+    var year = document.getElementById("year").value;
+    var day = document.getElementById("day");
+    var month = document.getElementById("month");
+    var gender = document.getElementById("gender");
+    if  (year > maxYear || year < 1919 ){
+      alert("Invalid year");
+      document.getElementById("year").value = document.getElementById("year").value.replace(characters, "");
+    }else if( day.value > 31 ){
+      alert("Invalid date!");
+      return false
+  
+    }else if(month.value > 12){
+      alert("Invalid month!");
+      return false
+  
+    }else {
+      if(gender===""){
+        alert("choose gender!");
+        return false
+      };
     }
-  }
+  } 
