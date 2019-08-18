@@ -40,4 +40,28 @@ function akanNames(){
     var gender = parseInt(document.getElementById("gender").value);
     var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7 ;
     var d = parseInt(day.toFixed());
+
+    if (gender === 1){
+        if (d === 0){
+          alert("Your Akan name is Kwasi");
+        }
+        else if (d === 1){
+          alert("Your Akan name is Kwadwo");
+        }
+        else if (d === 2){
+          alert("Your Akan name is Kwabena");
+        }
+        else if (d === 3){
+          alert("Your Akan name is Kwaku");
+        }
+        else if (d === 4){
+          alert("Your Akan name is Yaw");
+        }
+        else if (d === 5){
+          alert("Your Akan name is Kofi");
+        }
+        else {
+          alert("Your Akan name is Kwame");
+        }
+      }
   
