@@ -4,7 +4,7 @@
 // validating year, month, date and gender
 
 function akanNames(){
-    
+
     var currentYear = new Date();
     var maxYear = currentYear.getFullYear();
     var year = document.getElementById("year").value;
@@ -29,3 +29,15 @@ function akanNames(){
       };
     }
   } 
+
+  //determining the name using gender and input date
+
+  function calc(){
+    var cc = parseInt(document.getElementById("year").value.slice(0,2));
+    var yy = parseInt(document.getElementById("year").value.slice(2,4));
+    var mm = parseInt(document.getElementById("month").value);
+    var dd = parseInt(document.getElementById("day").value);
+    var gender = parseInt(document.getElementById("gender").value);
+    var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7 ;
+    var d = parseInt(day.toFixed());
+  
