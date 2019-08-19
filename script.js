@@ -11,7 +11,8 @@ function akanNames(){
     var year = document.getElementById("year").value;
     var day = document.getElementById("day");
     var month = document.getElementById("month");
-    var gender = document.getElementById("gender");
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
     if  (year > maxYear || year < 1919 ){
       alert("Invalid year");
       document.getElementById("year").value = document.getElementById("year").value.replace(characters, "");
@@ -19,18 +20,19 @@ function akanNames(){
     }else if( day.value > 31 || day.value <=0 || day.value === "" ){
       alert("Invalid date!");
       evt.preventDefault()
-      return false
+      
   
     }else if(month.value > 12 || month.value ==="" || month.value<= 0){
       alert("Invalid month!");
       evt.preventDefault()
-      return false
+      
   
     }else {
-      if(gender===""){
+      if(male.checked === "" || female.checked === ""){
         alert("choose gender!");
-        evt.preventDefault()
-        return false
+        evt.preventDefault();
+
+        
       };
     } alert("Guess what?????")
   }  
@@ -41,13 +43,14 @@ function akanNames(){
     var yy = parseInt(document.getElementById("year").value.slice(2,4));
     var mm = parseInt(document.getElementById("month").value);
     var dd = parseInt(document.getElementById("day").value);
-    var gender = parseInt(document.getElementById("gender").value);
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
     var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7 ;
     var d = parseInt(day.toFixed());
   
     //validating the form
   
-    if (gender === 1){
+    if (male){
       if (d === 0){
         alert(" You were born on Sunday and your Akan name is Kwasi");
       }
@@ -68,9 +71,11 @@ function akanNames(){
       }
       else {
         alert("You were born on Saturday and your Akan name is Kwame");
-      }
+
+        
+      } alert("But if you are a female")
     }
-    if (gender === 2){
+    if (female){
       if (d === 0){
         alert("You were born on Sunday and your Akan name is Akosua");
       }
@@ -91,6 +96,7 @@ function akanNames(){
       }
       else {
         alert("You were born on Saturday and your Akan name is Ama");
+
       }
     } alert("Fun!!!! right????")
   }
