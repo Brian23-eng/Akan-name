@@ -27,6 +27,7 @@ I am a prep student from Moringa who is enjoying his journey in this web develop
 3. Open index.html in a browser
 
 ## Link to live website
+*  https://brian23-eng.github.io/Akan-name/
 
 
 ## Support and contact details
