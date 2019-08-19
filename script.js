@@ -11,8 +11,7 @@ function akanNames(){
     var year = document.getElementById("year").value;
     var day = document.getElementById("day");
     var month = document.getElementById("month");
-    var male = document.getElementById("male");
-    var female = document.getElementById("female");
+
     if  (year > maxYear || year < 1919 ){
       alert("Invalid year");
       document.getElementById("year").value = document.getElementById("year").value.replace(characters, "");
@@ -43,14 +42,13 @@ function akanNames(){
     var yy = parseInt(document.getElementById("year").value.slice(2,4));
     var mm = parseInt(document.getElementById("month").value);
     var dd = parseInt(document.getElementById("day").value);
-    var male = document.getElementById("male");
-    var female = document.getElementById("female");
+    var gender = document.querySelector('input[name=gender]:checked').value;
     var day = (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd )%7 ;
     var d = parseInt(day.toFixed());
   
     //validating the form
   
-    if (male){
+    if (gender === 'male'){
       if (d === 0){
         alert(" You were born on Sunday and your Akan name is Kwasi");
       }
@@ -73,9 +71,9 @@ function akanNames(){
         alert("You were born on Saturday and your Akan name is Kwame");
 
         
-      } alert("But if you are a female")
+      }
     }
-    if (female){
+    if (gender ==='female'){
       if (d === 0){
         alert("You were born on Sunday and your Akan name is Akosua");
       }
